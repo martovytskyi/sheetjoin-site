@@ -1,0 +1,11 @@
+name: Keep API Alive
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -sf https://sheetjoin-api.onrender.com/up || true
