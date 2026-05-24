@@ -251,6 +251,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     .plan {
@@ -259,9 +261,35 @@
       border-radius: 16px;
       padding: 28px 24px;
       text-align: left;
+      display: flex;
+      flex-direction: column;
     }
 
-    .plan.featured { border-color: #7ba7f5; }
+    .plan.featured {
+      border-color: #e8a020;
+      background: #1a1608;
+    }
+
+    .plan .plan-cta {
+      margin-top: auto;
+      padding-top: 24px;
+    }
+
+    .btn-get-pro {
+      display: block;
+      width: 100%;
+      background: #e8a020;
+      color: #0d0d1f;
+      font-weight: 700;
+      font-size: 15px;
+      text-align: center;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+
+    .btn-get-pro:hover { opacity: .85; }
 
     .plan-name {
       font-size: 13px;
@@ -292,6 +320,7 @@
     }
 
     .plan ul li::before { content: '✓ '; color: #7ba7f5; }
+    .plan.featured ul li::before { color: #e8a020; }
 
     footer {
       border-top: 1px solid #1e1e40;
@@ -395,23 +424,28 @@
     <div class="plans">
       <div class="plan">
         <div class="plan-name">FREE</div>
-        <div class="plan-price">$0 <span>/ month</span></div>
         <ul>
           <li>5 analyses / day</li>
           <li>5 joins / day</li>
           <li>Dedup included</li>
           <li>All 9 languages</li>
         </ul>
+        <div class="plan-cta">
+          <div class="plan-price">Free</div>
+        </div>
       </div>
       <div class="plan featured">
         <div class="plan-name">PRO</div>
-        <div class="plan-price" >$8 <span>/ month</span></div>
         <ul>
           <li>50 analyses / day</li>
           <li>500 joins / day</li>
           <li>Dedup included</li>
           <li>Priority queue</li>
         </ul>
+        <div class="plan-cta">
+          <div class="plan-price">$8 <span>/ month</span></div>
+          <a class="btn-get-pro" href="https://chrome.google.com/webstore/category/extensions" target="_blank">Get Pro</a>
+        </div>
       </div>
     </div>
   </section>
