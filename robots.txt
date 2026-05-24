@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://stately-lily-b8b887.netlify.app/sitemap.xml
+Sitemap: https://sheetjoin.com/sitemap.xml
