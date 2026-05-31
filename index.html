@@ -6,6 +6,8 @@
   <title>SheetJoin — AI Analysis for Google Sheets & Excel</title>
   <meta name="description" content="Join tables, schedule automatic joins, find duplicates and analyze Google Sheets or uploaded CSV/Excel files with AI — no formulas, just results." />
   <meta name="author" content="SheetJoin" />
+  <meta name="keywords" content="Google Sheets join, merge spreadsheets, scheduled joins, find duplicates, AI analysis, CSV Excel upload, Chrome extension" />
+  <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#1a1a2e" />
   <link rel="canonical" href="https://sheetjoin.com/" />
 
@@ -38,9 +40,12 @@
     "name": "SheetJoin",
     "operatingSystem": "Chrome",
     "applicationCategory": "ProductivityApplication",
-    "description": "AI-powered Chrome extension for Google Sheets: join tables, find duplicates, and analyze data with AI.",
+    "description": "AI-powered Chrome extension for Google Sheets: join tables, schedule automatic joins, find duplicates, and analyze data with AI — no formulas needed.",
     "url": "https://sheetjoin.com/",
     "image": "https://sheetjoin.com/preview.png",
+    "downloadUrl": "https://chromewebstore.google.com/detail/sheetjoin/gecpbmagfkdibflgjbedeoidalaognkd",
+    "browserRequirements": "Requires Google Chrome",
+    "featureList": "Join tables, Scheduled joins, Find duplicates, AI analysis, CSV/Excel upload",
     "offers": [
       {
         "@type": "Offer",
@@ -53,12 +58,18 @@
         "price": "4",
         "priceCurrency": "USD",
         "name": "Pro plan",
-        "billingIncrement": "P1M"
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "4",
+          "priceCurrency": "USD",
+          "billingDuration": "P1M"
+        }
       }
     ],
     "author": {
       "@type": "Organization",
       "name": "SheetJoin",
+      "url": "https://sheetjoin.com/",
       "email": "martovitskij@gmail.com"
     }
   }
