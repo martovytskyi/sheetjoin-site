@@ -1,0 +1,19 @@
+# SheetJoin
+
+> Free Chrome extension for Google Sheets: join tables, schedule automatic joins, find duplicates, and analyze data with AI — no formulas needed.
+
+## Features
+- Join two Google Sheets or CSV/Excel files by matching key columns (like SQL JOIN)
+- Scheduled joins: automatically re-run joins daily, weekly, or monthly
+- Find and remove duplicate rows
+- AI analysis: trends, anomalies, executive reports
+- Works with Google Sheets and uploaded .csv, .xlsx, .xls files
+- 9 languages: English, Ukrainian, German, French, Spanish, Polish, Portuguese, Italian, Russian
+
+## Pricing
+- Free: 5 analyses/day, 5 joins/day, scheduled joins
+- Pro ($4/month): 50 analyses/day, 500 joins/day, deduplication, CSV/Excel upload, priority queue
+
+## Links
+- Website: https://sheetjoin.com/
+- Chrome Web Store: https://chromewebstore.google.com/detail/sheetjoin/gecpbmagfkdibflgjbedeoidalaognkd

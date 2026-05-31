@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SheetJoin — AI Analysis for Google Sheets & Excel</title>
-  <meta name="description" content="Join tables, schedule automatic joins, find duplicates and analyze Google Sheets or uploaded CSV/Excel files with AI — no formulas, just results." />
+  <title>SheetJoin — Join Tables & AI Analysis, Free Chrome Extension</title>
+  <meta name="description" content="Free Chrome extension: join tables, schedule automatic joins, find duplicates and analyze Google Sheets or CSV/Excel files with AI — no formulas needed." />
   <meta name="author" content="SheetJoin" />
   <meta name="keywords" content="Google Sheets join, merge spreadsheets, scheduled joins, find duplicates, AI analysis, CSV Excel upload, Chrome extension" />
   <meta name="robots" content="index, follow" />
@@ -19,8 +19,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SheetJoin" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="SheetJoin — AI Analysis for Google Sheets & Excel" />
-  <meta property="og:description" content="Join tables, schedule automatic joins, find duplicates and analyze Google Sheets or uploaded CSV/Excel files with AI — no formulas, just results." />
+  <meta property="og:title" content="SheetJoin — Join Tables & AI Analysis, Free Chrome Extension" />
+  <meta property="og:description" content="Free Chrome extension: join tables, schedule automatic joins, find duplicates and analyze Google Sheets or CSV/Excel files with AI — no formulas needed." />
   <meta property="og:image" content="https://sheetjoin.com/preview.png" />
   <meta property="og:image:width" content="1536" />
   <meta property="og:image:height" content="807" />
@@ -28,8 +28,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SheetJoin — AI Analysis for Google Sheets & Excel" />
-  <meta name="twitter:description" content="Join tables, schedule automatic joins, find duplicates and analyze Google Sheets or CSV/Excel files with AI." />
+  <meta name="twitter:title" content="SheetJoin — Join Tables & AI Analysis, Free Chrome Extension" />
+  <meta name="twitter:description" content="Free Chrome extension: join tables, schedule automatic joins, find duplicates and analyze Google Sheets or CSV/Excel files with AI." />
   <meta name="twitter:image" content="https://sheetjoin.com/preview.png" />
 
   <!-- Schema.org structured data -->
@@ -70,8 +70,20 @@
       "@type": "Organization",
       "name": "SheetJoin",
       "url": "https://sheetjoin.com/",
-      "email": "martovitskij@gmail.com"
+      "contactPoint": {"@type": "ContactPoint", "contactType": "support", "url": "https://sheetjoin.com/#contact"}
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What is SheetJoin?","acceptedAnswer":{"@type":"Answer","text":"SheetJoin is a free Chrome extension that lets you join tables, find duplicates, schedule automatic joins, and run AI analysis directly on your Google Sheets — without formulas or exports."}},
+      {"@type":"Question","name":"How does joining tables work?","acceptedAnswer":{"@type":"Answer","text":"Select two Google Sheets or CSV/Excel files, choose key columns to match on — like SQL JOIN — and pick which columns to include. SheetJoin writes the merged table directly to an output sheet."}},
+      {"@type":"Question","name":"What are Scheduled Joins?","acceptedAnswer":{"@type":"Answer","text":"Scheduled joins automatically re-run your table join on a daily, weekly, or monthly schedule and update the output sheet. Available on both Free and Pro plans."}},
+      {"@type":"Question","name":"Is there a free plan?","acceptedAnswer":{"@type":"Answer","text":"Yes — free to install, no credit card required. Free plan includes 5 analyses/day, 5 joins/day, and scheduled joins. Pro is $4/month."}}
+    ]
   }
   </script>
 
@@ -346,6 +358,7 @@
     }
 
     footer a { color: #5a6890; }
+    .visually-hidden { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
     footer a:hover { color: #7ba7f5; text-decoration: none; }
 
     @media (max-width: 600px) {
@@ -362,6 +375,7 @@
     <a class="btn-cws" href="https://chromewebstore.google.com/detail/sheetjoin/gecpbmagfkdibflgjbedeoidalaognkd" target="_blank" rel="noopener">Add to Chrome — Free</a>
   </header>
 
+  <main>
   <section class="hero">
     <div class="badge">✦ Chrome Extension · Free to start</div>
     <h1>AI toolkit for<br /><span>your spreadsheets</span></h1>
@@ -370,10 +384,11 @@
   </section>
 
   <section class="preview">
-    <img src="preview.png" alt="SheetJoin extension showing Join Tables, Find Duplicates and AI Analysis panels" />
+    <img src="preview.png" alt="SheetJoin extension showing Join Tables, Find Duplicates and AI Analysis panels" width="1905" height="860" fetchpriority="high" />
   </section>
 
   <section class="features">
+    <h2 class="visually-hidden">Features</h2>
     <div class="feature">
       <div class="feature-icon">📈</div>
       <h3>AI Analysis</h3>
@@ -414,7 +429,7 @@
   <section style="max-width:960px;margin:0 auto 80px;padding:0 24px;">
     <h2 style="font-size:24px;font-weight:700;color:#eef2ff;margin-bottom:8px;text-align:center;">How Join Tables works</h2>
     <p style="text-align:center;color:#7a8ab0;font-size:15px;margin-bottom:28px;">Two separate sheets merge into one combined result — matched by key columns</p>
-    <img src="join-diagram.png" alt="Table A + Table B joined into Result table" style="width:100%;border-radius:14px;border:1px solid #252555;" />
+    <img src="join-diagram.png" alt="Table A + Table B joined into Result table" width="1140" height="400" style="width:100%;border-radius:14px;border:1px solid #252555;" />
   </section>
 
   <section class="how">
@@ -508,6 +523,33 @@
     </div>
   </section>
 
+  <section style="max-width:720px;margin:0 auto 80px;padding:0 24px;">
+    <h2 style="font-size:26px;font-weight:700;color:#eef2ff;margin-bottom:32px;text-align:center;">Frequently Asked Questions</h2>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div style="background:#141430;border:1px solid #252555;border-radius:14px;padding:24px;">
+        <h3 style="font-size:16px;font-weight:700;color:#eef2ff;margin:0 0 8px;">What is SheetJoin?</h3>
+        <p style="font-size:14px;color:#7a8ab0;margin:0;">SheetJoin is a free Chrome extension that lets you join tables, find duplicates, schedule automatic joins, and run AI analysis directly on your Google Sheets — without formulas or exports.</p>
+      </div>
+      <div style="background:#141430;border:1px solid #252555;border-radius:14px;padding:24px;">
+        <h3 style="font-size:16px;font-weight:700;color:#eef2ff;margin:0 0 8px;">How does joining tables work?</h3>
+        <p style="font-size:14px;color:#7a8ab0;margin:0;">You select two Google Sheets (or upload CSV/Excel files), choose the key columns to match on — like SQL JOIN — and pick which columns to include in the result. SheetJoin writes the merged table directly to an output sheet.</p>
+      </div>
+      <div style="background:#141430;border:1px solid #252555;border-radius:14px;padding:24px;">
+        <h3 style="font-size:16px;font-weight:700;color:#eef2ff;margin:0 0 8px;">What are Scheduled Joins?</h3>
+        <p style="font-size:14px;color:#7a8ab0;margin:0;">Scheduled joins automatically re-run your table join on a daily, weekly, or monthly schedule and update the output sheet — no manual work needed. Available on both Free and Pro plans.</p>
+      </div>
+      <div style="background:#141430;border:1px solid #252555;border-radius:14px;padding:24px;">
+        <h3 style="font-size:16px;font-weight:700;color:#eef2ff;margin:0 0 8px;">Does it work with CSV and Excel files?</h3>
+        <p style="font-size:14px;color:#7a8ab0;margin:0;">Yes. You can upload .csv, .xlsx, or .xls files directly — no need to import them into Google Sheets first. Results are downloadable as a CSV file.</p>
+      </div>
+      <div style="background:#141430;border:1px solid #252555;border-radius:14px;padding:24px;">
+        <h3 style="font-size:16px;font-weight:700;color:#eef2ff;margin:0 0 8px;">Is there a free plan?</h3>
+        <p style="font-size:14px;color:#7a8ab0;margin:0;">Yes — SheetJoin is free to install with no credit card required. The free plan includes 5 analyses per day, 5 joins per day, and scheduled joins. Pro ($4/month) unlocks 50 analyses, 500 joins, deduplication, CSV/Excel upload, and priority queue.</p>
+      </div>
+    </div>
+  </section>
+
+  </main>
   <footer>
     <span>© 2026 SheetJoin</span>
     <nav style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;">
